@@ -5,49 +5,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavle Ilic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style></style>
+    <style>
+
+        body
+        {
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+        ul
+        {
+            display: flex;
+            justify-content: center;
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+            
+        }
+        img
+        {
+            width: 400px;
+            height: auto;
+        }
+        img#obraz
+        {
+            width:200px;
+            height: auto;
+        }
+        h1
+        {
+            font-size: 100px;
+            display: flex;
+        }
+        nav
+        {
+            overflow: hidden;
+            display: flex;
+            position: fixed;
+        }
+
+        nav a
+        {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover
+        {
+            background-color: #ddd;
+            color: black;
+            text-decoration: none;
+        }
+        section
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 35%;
+            padding-top: 20%;
+            
+        }
+        section div
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        form
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        input#submitDugme
+        {
+            margin-top: 5%;
+        }
+
+        h2#obrazNaslov
+        {
+            margin-top: 5%;
+        }
+
+        p#profilP
+        {
+            margin-left: 5%;
+        }
+        p#obrazTekst
+        {
+            margin: 5%;
+        }
+        p#godotP
+        {
+            margin:5%;
+        }
+        p#quantoxP
+        {
+            margin:5%;
+        }
+        p#pmP
+        {
+            margin:5%;
+        }
+        p#arduinoP
+        {
+            margin:5%;
+        }
+        p#gpP
+        {
+            margin:5%;
+        }
+
+        div#os21
+        {
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        div#pkg
+        {
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        div#pmf
+        {
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        div#os21:hover
+        {
+            opacity:1;
+        }
+        div#pkg:hover
+        {
+            opacity:1;
+        }
+        div#pmf:hover
+        {
+            opacity:1;
+        }  
+        div#prB
+        {
+            border: white;
+            border-radius: 1rem;
+            border-width: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h3>PAVLE ILIC Portfolio</h3>
-        <ul class="row">
-            <li><a href="">Početna</a></li>
-            <li><a href="">Iskustvo</a></li>
-            <li><a href="">Projekti</a></li>
-            <li><a href="">Ciljevi</a></li>
-            <li><a href="">Kontakt</a></li>
-        </ul>
+        <nav>
+            <li><a href=".sec-pocetak">Početna</a></li>
+            <li><a href=".sec-profil">Profil</a></li>
+            <li><a href=".sec-iskustvo">Iskustvo</a></li>
+            <li><a href=".sec-projekti">Projekti</a></li>
+            <li><a href=".sec-ciljevi">Ciljevi</a></li>
+            <li><a href=".sec-kontakt">Kontakt</a></li>
+        </nav>
     </header>
 
-    <section>
+    <section class="sec-pocetak text-center">
+        <h1>PAVLE ILIC</h1>
+        <p>PORTFOLIO</p>
+    </section>
+        
+    <section class="sec-profil">
+        <div id="profil">
+            <div>
+                <img id="profilI" src="slike/selfie.jpg" alt="Pavle Ilic Slika">
+                <p id="profilP">Moje ime je Pavle Ilić, dolazim iz Kragujevca.</p>
+            </div>
+        </div>
+        <h2 id="obrazNaslov">OBRAZOVANJE</h2>
+        <div id="obrazovanje">
+            <div id="os21">
+                <img id="obraz" src="slike/osnovna-skola-21-oktobar-kragujevac-slika-skole-3246096170.jpg" alt="21-oktobar-oš">
+                <p id="obrazTekst">OŠ "21. Oktobar"</p>
+            </div>
+
+            <div id="pkg">
+                <img id="obraz" src="slike/Prva-kragujevacka-gimnazija-743048058.jpg" alt="Prva kragujevačka gimnazija">
+                <p id="obrazTekst">Prva kragujevačka gimnazija | Smer "Učenici sa posebnom sposobnošću za informatiku i računarstvo"</p>
+            </div>
+
+            <div id="pmf">
+                <img id="obraz" src="slike/PMF-2277751255.jpg" alt="Prirodno-matematički fakultet">
+                <p id="obrazTekst">Prirodno-Matematički Fakultet u Kragujevcu | završene master studije</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-iskustvo">
         <h1>ISKUSTVO</h1>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div id="iskustvo">
+            <div>
+                <img src="slike/godott.png" alt="Godot">
+                <p id="godotP">Doprineo sam razvoju Godot Engine-a, open-source programa kojim se mogu praviti igrice i aplikacije za Windows, MacOS, Linux, Android, iPhone, Web,..</p>
+            </div>
+
+            <div>
+                <img src="slike/Quantox-809751914.jpg" alt="Quantox IT firma">
+                <p id="quantoxP">5 godina radnog iskustva u Quantox-u</p>
+            </div>
         </div>
     </section>
 
-    <section>
+    <section class="sec-projekti">
         <h1>PROJEKTI</h1>
-        <div>
+        <div id="projekti">
+            <div>
+                <img src="slike/passwordManager.png" alt="Password Manager">
+                <p id="pmP">Password Manager koji koristi i originalan, a i sha256 algoritam za enkripciju. Napravljen je u Python-u.</p>
+            </div>
+
+            <div>
+                <img src="slike/arduino.png" alt="Arduino">
+                <p id="arduinoP">C++ program napisan za Arduino kojim se, preko senzora temperature, pospešuje pravilan rast biljaka.</p>
+            </div>
+
+            <div>
+                <img src="slike/googlePlay.png" alt="Google Play">
+                <p id="gpP">Android aplikacija za privatno i bezbedno dopisivanje. Zvuči kao nešto što bi Facebook rekao. -_-</p>
+            </div>
+
         </div>
+
     </section>
 
-    <section>
+    <section class="sec-ciljevi">
         <h1>CILJEVI</h1>
-        <div>
+        <div id="ciljevi">
+            <h4>...</h4>
         </div>
     </section>
 
-    <section>
+    <section class="sec-kontakt">
         <h1>KONTAKT</h1>
-        <div>
-
-        </div>
+        <form id="kontaktForma">
+            <label for="emailAdresa">Email adresa : </label>
+            <input type="email" id="emailAdresa" name="emailAdresa">
+            <label for="poruka">Poruka</label>
+            <input type="text" id="poruka" name="poruka">
+            <input id="submitDugme" type="submit" value="POŠALJI">
+        </form>
     </section>
+    <script src="app.js"></script>
     
-
 </body>
 </html>
