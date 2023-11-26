@@ -106,10 +106,10 @@
         {
             margin:5%;
         }
-        p#quantoxP
+        /*p#quantoxP
         {
             margin:5%;
-        }
+        }*/
         p#pmP
         {
             margin:5%;
@@ -123,33 +123,6 @@
             margin:5%;
         }
 
-        div#os21
-        {
-            opacity: 0;
-            transition: opacity 0.5s ease-in;
-        }
-        div#pkg
-        {
-            opacity: 0;
-            transition: opacity 0.5s ease-in;
-        }
-        div#pmf
-        {
-            opacity: 0;
-            transition: opacity 0.5s ease-in;
-        }
-        div#os21:hover
-        {
-            opacity:1;
-        }
-        div#pkg:hover
-        {
-            opacity:1;
-        }
-        div#pmf:hover
-        {
-            opacity:1;
-        }  
         div#prB
         {
             border: white;
@@ -160,7 +133,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav style="font-size:0.9vw;">
             <li><a href=".sec-pocetak">Početna</a></li>
             <li><a href=".sec-profil">Profil</a></li>
             <li><a href=".sec-iskustvo">Iskustvo</a></li>
@@ -171,67 +144,96 @@
     </header>
 
     <section class="sec-pocetak text-center">
-        <h1>PAVLE ILIC</h1>
-        <p>PORTFOLIO</p>
+        <h1 style="font-size:6vw;">PAVLE ILIC</h1>
+        <p style="font-size:2vw;">PORTFOLIO</p>
     </section>
         
     <section class="sec-profil">
         <div id="profil">
-            <div>
-                <img id="profilI" src="slike/selfie.jpg" alt="Pavle Ilic Slika">
-                <p id="profilP">Moje ime je Pavle Ilić, dolazim iz Kragujevca.</p>
+            <div class="container">
+                <div class="row">
+                    <img class="col-sm-10 col-md-8 col-lg-4" id="profilI" src="slike/selfie.jpg" alt="Pavle Ilic Slika">
+                    <p class="col-sm-10 col-md-8 col-lg-4" id="profilP">Moje ime je Pavle Ilić, dolazim iz Kragujevca.</p>
+                </div>
             </div>
         </div>
         <h2 id="obrazNaslov">OBRAZOVANJE</h2>
         <div id="obrazovanje">
             <div id="os21">
-                <img id="obraz" src="slike/osnovna-skola-21-oktobar-kragujevac-slika-skole-3246096170.jpg" alt="21-oktobar-oš">
-                <p id="obrazTekst">OŠ "21. Oktobar"</p>
+                <div class="container">
+                    <div class="row">
+                        <img class="col-sm-8 col-md-4 col-lg-3" id="obraz" src="slike/osnovna-skola-21-oktobar-kragujevac-slika-skole-3246096170.jpg" alt="21-oktobar-oš">
+                        <p class="col-sm-10 col-md-8 col-lg-6" id="obrazTekst">OŠ "21. Oktobar"</p>
+                    </div>
+                </div>
+                
             </div>
 
             <div id="pkg">
-                <img id="obraz" src="slike/Prva-kragujevacka-gimnazija-743048058.jpg" alt="Prva kragujevačka gimnazija">
-                <p id="obrazTekst">Prva kragujevačka gimnazija | Smer "Učenici sa posebnom sposobnošću za informatiku i računarstvo"</p>
+                <div class="container"></div>
+                    <div class="row">
+                        <img class="col-sm-4 col-md-12 col-lg-3" id="obraz" src="slike/Prva-kragujevacka-gimnazija-743048058.jpg" alt="Prva kragujevačka gimnazija">
+                        <p class="col-sm-10 col-md-4 col-lg-6 offset-sm-2" id="obrazTekst">Prva kragujevačka gimnazija | Smer "Učenici sa posebnom sposobnošću za informatiku i računarstvo"</p>
+                    </div>
+                </div>
             </div>
 
             <div id="pmf">
-                <img id="obraz" src="slike/PMF-2277751255.jpg" alt="Prirodno-matematički fakultet">
-                <p id="obrazTekst">Prirodno-Matematički Fakultet u Kragujevcu | završene master studije</p>
+                <div class="container">
+                    <div class="row">
+                        <img class="col-sm-8 col-md-4 col-lg-3" id="obraz" src="slike/PMF-2277751255.jpg" alt="Prirodno-matematički fakultet">
+                        <p class="col-sm-10 col-md-8 col-lg-6" id="obrazTekst">Prirodno-Matematički Fakultet u Kragujevcu | završene master studije</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="sec-iskustvo">
-        <h1>ISKUSTVO</h1>
+           
+        <h1 style="font-size:8vw;">ISKUSTVO</h1>
+            
+        
         <div id="iskustvo">
-            <div>
-                <img src="slike/godott.png" alt="Godot">
-                <p id="godotP">Doprineo sam razvoju Godot Engine-a, open-source programa kojim se mogu praviti igrice i aplikacije za Windows, MacOS, Linux, Android, iPhone, Web,..</p>
+            <div class="containter">
+                <div class="row">
+                    <img class="col-sm-4 col-md-4 col-lg-3" src="slike/godott.png" alt="Godot">
+                    <p class="col-sm-6 col-md-6 col-lg-4" id="godotP">Doprineo sam razvoju Godot Engine-a, open-source programa kojim se mogu praviti igrice i aplikacije za Windows, MacOS, Linux, Android, iPhone, Web,..</p>
+                </div>
             </div>
 
-            <div>
-                <img src="slike/Quantox-809751914.jpg" alt="Quantox IT firma">
-                <p id="quantoxP">5 godina radnog iskustva u Quantox-u</p>
+            <div class="containter">
+                <div class="row">
+                    <img class="col-sm-10 col-md-10 col-lg-7" src="slike/Quantox-809751914.jpg" alt="Quantox IT firma">
+                    <p class="col-sm-6 col-md-3 col-lg-4" id="quantoxP">5 godina radnog iskustva u Quantox-u</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="sec-projekti">
-        <h1>PROJEKTI</h1>
+        <h1 style="font-size:6vw;">PROJEKTI</h1>
+        <hr>
         <div id="projekti">
-            <div>
-                <img src="slike/passwordManager.png" alt="Password Manager">
-                <p id="pmP">Password Manager koji koristi i originalan, a i sha256 algoritam za enkripciju. Napravljen je u Python-u.</p>
+            <div class="container">
+                <div class="row">
+                    <img class="col-6 col-sm-4 col-md-4 col-lg-3" src="slike/passwordManager.png" alt="Password Manager">
+                    <p id="pmP">Password Manager koji koristi i originalan, a i sha256 algoritam za enkripciju. Napravljen je u Python-u.</p>
+                </div>
             </div>
 
-            <div>
-                <img src="slike/arduino.png" alt="Arduino">
-                <p id="arduinoP">C++ program napisan za Arduino kojim se, preko senzora temperature, pospešuje pravilan rast biljaka.</p>
+            <div class="container">
+                <div class="row">
+                    <img class="col-6 col-sm-4 col-md-4 col-lg-3" src="slike/arduino.png" alt="Arduino">
+                    <p id="arduinoP">C++ program napisan za Arduino kojim se, preko senzora temperature, pospešuje pravilan rast biljaka.</p>
+                </div>
             </div>
 
-            <div>
-                <img src="slike/googlePlay.png" alt="Google Play">
-                <p id="gpP">Android aplikacija za privatno i bezbedno dopisivanje. Zvuči kao nešto što bi Facebook rekao. -_-</p>
+            <div class="container">
+                <div class="row">
+                    <img class="col-6 col-sm-4 col-md-4 col-lg-3" src="slike/googlePlay.png" alt="Google Play">
+                    <p id="gpP">Android aplikacija za privatno i bezbedno dopisivanje. Zvuči kao nešto što bi Facebook rekao. -_-</p>
+                </div>
             </div>
 
         </div>
@@ -239,20 +241,22 @@
     </section>
 
     <section class="sec-ciljevi">
-        <h1>CILJEVI</h1>
+        <h1 style="font-size:6vw;">CILJEVI</h1>
         <div id="ciljevi">
-            <h4>...</h4>
+            <h4 style="font-size:2vw;">...</h4>
         </div>
     </section>
 
     <section class="sec-kontakt">
-        <h1>KONTAKT</h1>
-        <form id="kontaktForma">
-            <label for="emailAdresa">Email adresa : </label>
-            <input type="email" id="emailAdresa" name="emailAdresa">
-            <label for="poruka">Poruka</label>
-            <input type="text" id="poruka" name="poruka">
-            <input id="submitDugme" type="submit" value="POŠALJI">
+        <h1 style="font-size:6vw;">KONTAKT</h1>
+        <form class="container" id="kontaktForma">
+            <div class="row">
+                <label for="emailAdresa">Email adresa : </label>
+                <input type="email" id="emailAdresa" name="emailAdresa">
+                <label for="poruka">Poruka</label>
+                <input class=type="text" id="poruka" name="poruka">
+                <input id="submitDugme" type="submit" value="POŠALJI">
+            </div>
         </form>
     </section>
     <script src="app.js"></script>
