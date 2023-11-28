@@ -9,12 +9,15 @@
 
         *{
             transition: all 1.2s;
+            opacity: 1;
         }
         body
         {
             background-color: black;
             color: white;
             overflow-x: hidden;
+            min-height:100%;
+            min-width: 100%;
         }
         ul
         {
@@ -148,22 +151,16 @@
         div.levo:hover
         {
          transform: scale(115%) translateX(10%);
-         background-color: black;
-         background-size: contain;
          z-index: 1;
         }
         div.desno:hover
         {
             transform: scale(115%) translateX(-10%);
-            background-color: black;
-            background-size: contain;
             z-index: 1;
         }
         div.centar:hover
         {
             transform: scale(115%);
-            background-color: black;
-            background-size: contain;
             z-index: 1;
         }
         
@@ -173,6 +170,7 @@
             filter: blur(0px);
             transform: translateX(0%);
         }
+        
 
     </style>
 </head>
