@@ -180,7 +180,18 @@
             outline-width: 3px;
             height: 300px;
             width: auto;
-            margin: 15px;  
+            max-width: 100%;
+            margin: 15px;
+            transition: 0.2s;
+            flex-grow: inherit;
+        }
+        div.card:hover
+        {
+            outline-width: 7px;
+            outline-offset: 0.5rem;
+            outline-style:ridge;
+            transform:scaleX(105%);
+            margin: 25px;
         }
         div.naslovKartice
         {
