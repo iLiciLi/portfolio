@@ -2,11 +2,12 @@ function renderVestinu(v) {
     const card = document.createElement('div');
     card.className = `card card-body d-flex flex-column align-items-center gap-3 col-6 col-sm-4 col-md-4 col-lg-3`;
     card.id = `${v.Id}`
+    let nesto = "⭐".repeat(`${v.ocena}`);
     
     const cardContent = `
         <img style="height: 100px;width: auto;" src='${v.slika}' alt='${v.naziv} logo' />
         <div style="color: white;" class='card-text naslovKartice'>${v.naziv}</div>
-        <div style="color: white;" class='card-text'>Ocena: ${v.ocena}</div>
+        <div style="color: white;" class='card-text'>Ocena: ${nesto}</div>
         <div style="color: white;" class='card-text'>Iskustvo: ${v.godina_iskustva} godine</div>
     `;
     

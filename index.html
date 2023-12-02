@@ -202,6 +202,15 @@
             opacity: 1;
             filter:blur(0px);
         }
+        .resetDugme
+        {
+            color:white;
+            background-color: black;
+            outline-color: white;
+            outline-offset: 0.5rem;
+            outline-width: 15px;
+        }
+
         
     </style>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -272,7 +281,7 @@
         <label for="filterZvezdica">Broj Zvezdica</label>
         <input type="range" name="brojZvezdica" id="filterZvezdica" value="0" min="0" max="10"  step="1" onchange="filtriranjeVestina(vestineData,'#vestineContainer')" oninput="this.nextElementSibling.value = this.value">
         <output id="outputID">0</output>
-        <button type="button" onclick="restartovanjeVestina(vestineData)">Restart</button>
+        <button class="resetDugme" type="button" onclick="restartovanjeVestina(vestineData)">Restart</button>
         <div class="container vestineContainerK">
             <div id="vestineContainer"  class="row">
 
