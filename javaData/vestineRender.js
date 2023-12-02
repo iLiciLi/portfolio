@@ -1,16 +1,29 @@
-function renderVestinu(v)
-{
-    $kartica = $(`<div class='card col></div>`);
-    $pozadina = $(`<div class='card-body d-flex flex-column align-items-center'></div>`);
-    $pozadina.prepend(`<img id='htmlSlika' src=v['slika'] alt=v['naziv'] +' logo' />`);
-    $pozadina.text(v['naziv']);
-    $pozadina.append(`<div class='card-body d-flex flex-column align-items-center'>'Ocena : ' + v['ocena']</div>`);
-    $pozadina.append(`<div class='card-body d-flex flex-column align-items-center'>'Iskustvo : ' + v['godina_iskustva']</div>`);
-    $kartica.append($pozadina);
-    return $kartica;
+function renderVestinu(v) {
+    const card = document.createElement('div');
+    card.className = `card card-body d-flex flex-column align-items-center gap-3 ${v.class} col-6 col-sm-4 col-md-4 col-lg-3`;
+    
+    const cardContent = `
+        <img style="height: 100px;width: auto;" src='${v.slika}' alt='${v.naziv} logo' />
+        <div style="color: white;" class='card-text naslovKartice'>${v.naziv}</div>
+        <div style="color: white;" class='card-text'>Ocena: ${v.ocena}</div>
+        <div style="color: white;" class='card-text'>Iskustvo: ${v.godina_iskustva} godine</div>
+    `;
+    
+    card.innerHTML = cardContent;
+
+    return card;
 }
 
-function renderVestineL(putanja,vestine)
-{
-    vestine.map(vestina=>$(putanja).append(renderVestinu(vestina)));
+function renderVestine(data, containerSelector) {
+    const container = document.querySelector(containerSelector);
+
+    data.forEach((item) => {
+        const card = renderVestinu(item);
+        container.appendChild(card);
+    });
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    renderVestine(vestineData, '#vestineContainer');
+});

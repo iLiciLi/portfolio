@@ -169,15 +169,39 @@
             filter: blur(0px);
             transform: translateX(0%);
         }
-        
-
+        div.card 
+        {
+            opacity: 1;
+            filter:blur(0px);
+            color: white;
+            background-color: black;
+            outline-color: white;
+            outline-style: solid;
+            outline-width: 3px;
+            height: 300px;
+            width: auto;
+            margin: 15px;  
+        }
+        div.naslovKartice
+        {
+            text-transform: uppercase;
+        }
+        div.card-text
+        {
+            opacity: 1;
+            filter:blur(0px);
+        }
     </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javaData/vestine.js"></script>
+    <script type="text/javascript" src="javaData/vestineRender.js"></script>
 </head>
 <body>
     <header>
         <nav style="font-size:0.9vw;">
             <li><a href=".sec-pocetak">Početna</a></li>
             <li><a href=".sec-profil">Profil</a></li>
+            <li><a href=".sec-vestine">Veštine</a></li>
             <li><a href=".sec-iskustvo">Iskustvo</a></li>
             <li><a href=".sec-projekti">Projekti</a></li>
             <li><a href=".sec-ciljevi">Ciljevi</a></li>
@@ -231,8 +255,13 @@
         </div>
     </section>
 
-    <section class="sec-vestine">
+    <section class="sec-vestine ">
+        <h1 style="font-size:6vw;">VEŠTINE</h1>
+        <div class="container vestineContainerK">
+            <div id="vestineContainer"  class="row">
 
+            </div>
+        </div>
     </section>
 
     <section class="sec-iskustvo">
@@ -289,7 +318,7 @@
     <section class="sec-ciljevi">
         <h1 style="font-size:6vw;">CILJEVI</h1>
         <div id="ciljevi">
-            <h4 style="font-size:2vw;">...</h4>
+            <h4 style="font-size:2vw;">MNOGO</h4>
         </div>
     </section>
 
@@ -306,6 +335,7 @@
         </form>
     </section>
     <script src="app.js"></script>
+    
     
 </body>
 </html>

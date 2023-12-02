@@ -6,7 +6,6 @@ vestineData = [
     {"class":"csK","slika":"javaData/javaSlike/csS.png","naziv":"c#","ocena":8,"godina_iskustva":1},
     {"class":"pyK","slika":"javaData/javaSlike/pyS.png","naziv":"python","ocena":7,"godina_iskustva":3},
     {"class":"gdK","slika":"javaData/javaSlike/gdS.png","naziv":"godot game engine","ocena":8,"godina_iskustva":1.5},
-    {"class":"wfK","slika":"javaData/javaSlike/wfS.png","naziv":"win forms","ocena":5,"godina_iskustva":1},
     {"class":"cppK","slika":"javaData/javaSlike/cppS.png","naziv":"c++","ocena":3,"godina_iskustva":2},
     
 ]
